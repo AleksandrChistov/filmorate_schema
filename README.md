@@ -23,6 +23,7 @@ SELECT f.id, f.name
 FROM films f
 JOIN film_genres fg ON f.id = fg.film_id
 JOIN genre g ON fg.genre_id = g.id
+JOIN mpa m ON f.mpa_id = m.id
 WHERE g.name = 'Комедия';
 ```
 
