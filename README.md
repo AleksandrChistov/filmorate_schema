@@ -1,6 +1,6 @@
 # filmorate_schema
 
-![DB tables Shema of the filmorate project](https://github.com/AleksandrChistov/filmorate_schema/blob/main/Снимок%20экрана%202025-04-27%20175453.png)
+![DB tables Shema of the filmorate project](https://github.com/AleksandrChistov/filmorate_schema/blob/main/Снимок%20экрана%202025-04-27%20175628.png)
 
 Данная схема базы данных предназначена для хранения информации о фильмах, жанрах, пользователях и их взаимоотношениях.
 
