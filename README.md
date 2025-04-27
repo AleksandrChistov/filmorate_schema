@@ -20,8 +20,8 @@
 
 ```sql
 SELECT f.id, f.name
-FROM films f
-JOIN film_genres fg ON f.id = fg.film_id
+FROM film f
+JOIN film_genre fg ON f.id = fg.film_id
 JOIN genre g ON fg.genre_id = g.id
 JOIN mpa m ON f.mpa_id = m.id
 WHERE g.name = 'Комедия';
@@ -31,7 +31,7 @@ WHERE g.name = 'Комедия';
 
 ```sql
 SELECT u.id, u.login
-FROM users u
+FROM user u
 JOIN film_likes fl ON u.id = fl.user_id
 WHERE fl.film_id = 456;
 ```
@@ -40,7 +40,7 @@ WHERE fl.film_id = 456;
 
 ```sql
 SELECT u.id, u.login
-FROM users u
+FROM user u
 JOIN friendship f ON (u.id = f.friend_id AND f.user_id = 1) OR (u.id = f.user_id AND f.friend_id = 1)
 WHERE f.is_mutual = TRUE;
 ```
